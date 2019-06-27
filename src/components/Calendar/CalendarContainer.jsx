@@ -96,12 +96,12 @@ export default class CalendarContainer extends Component {
   removeEvent = index => {
     const monthEvents = this.state.selectedMonthEvents.slice();
     // eslint-disable-next-line no-restricted-globals
-    const isConfirmed = confirm("Are you sure you want to remove this event?");
+    const isConfirmed = confirm("Вы уверены что хотите удалить событие");
     if (isConfirmed) {
       if (index !== -1) {
         monthEvents.splice(index, 1);
       } else {
-        alert("No events to remove on this day!");
+        alert("Нет событий для удаления в этот день!");
       }
 
       this.setState({

@@ -33,7 +33,7 @@ const renderWeeks = ({
   selectDay
 }) => {
   const weeks = [];
-  let done = false;
+  let isDone = false;
   const previousSelectedMonth = selectedMonth
     .clone()
     .startOf("month")
@@ -43,7 +43,7 @@ const renderWeeks = ({
   let count = 0;
   let monthIndex = previousSelectedMonth.month();
 
-  while (!done) {
+  while (!isDone) {
     weeks.push(
       <WeekView
         previousSelectedMonth={previousSelectedMonth.clone()}
@@ -54,7 +54,11 @@ const renderWeeks = ({
       />
     );
     previousSelectedMonth.add(1, "w");
-    done = count++ > 2 && monthIndex !== previousSelectedMonth.month();
+
+    const isMoreThenTwo = count++ > 2;
+    const isDifferentIdx = monthIndex !== previousSelectedMonth.month();
+
+    isDone = isMoreThenTwo && isDifferentIdx;
     monthIndex = previousSelectedMonth.month();
   }
   return weeks;
