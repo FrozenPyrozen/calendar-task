@@ -1,4 +1,4 @@
-Instead of a modal window used prompt cause i'm a little lazy🌝 But if you want to make sure that I can do modals, then they are in [this](https://github.com/FrozenPyrozen/webbylab-test-task "My project with modal window") project)
+Instead of a modal window used prompt cause I'm a little lazy🌝 But if you want to make sure that I can do modals, then they are in [this](https://github.com/FrozenPyrozen/webbylab-test-task "My project with modal window") project)
 ## Instaliation
 
 1. Clone this repository:
