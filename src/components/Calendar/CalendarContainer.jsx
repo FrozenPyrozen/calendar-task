@@ -88,7 +88,7 @@ export default class CalendarContainer extends Component {
       if (isConfirmed) {
         this.handleAdd();
       } else {
-        alert("Правильно! Не нужно пытаться изменить прошлое");
+        alert("Правильно! Не нужно ворошить прошлое");
       }
     }
   };
